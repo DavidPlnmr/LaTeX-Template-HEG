@@ -31,6 +31,9 @@
 \usepackage{pgfplotstable}
 \usepackage{pgf}
 
+% Add references in table of contents
+\usepackage[nottoc]{tocbibind}
+
 
 % Title
 \title{Title}
@@ -59,41 +62,41 @@
     \end{figure}
 
     \vspace*{0.5cm}
-    
+
     \begin{center}
 
-    \begingroup \linespread{1,75} \selectfont 
-    {\Large Titre du travail de bachelor}\\[0,75cm]
-     \endgroup
+        \begingroup \linespread{1,75} \selectfont
+        {\Large Titre du travail de bachelor}\\[0,75cm]
+        \endgroup
 
 
-    % Make a vertical space
-    
-    \vspace{1.5cm}
+        % Make a vertical space
 
-    \textsc{\large Travail de Bachelor HES réalisé en vue de \newline l’obtention du Bachelor par :}\\[0,50cm] 
+        \vspace{1.5cm}
 
-      \begingroup \linespread{1,75} \selectfont 
-      \textsc{\large <Nom Prénom>}\\[0,50cm]
-      \endgroup
+        \textsc{\large Travail de Bachelor HES réalisé en vue de \newline l’obtention du Bachelor par :}\\[0,50cm]
 
-    
-    \vspace{1cm}
+        \begingroup \linespread{1,75} \selectfont
+        \textsc{\large <Nom Prénom>}\\[0,50cm]
+        \endgroup
+
+
+        \vspace{1cm}
 
 
         \textsc{\large Conseiller au travail de Bachelor : }
 
-        \begingroup \linespread{1,75} \selectfont 
+        \begingroup \linespread{1,75} \selectfont
         \textsc{\large <Prénom, NOM, titre de la personne>}\\[1cm]
         \endgroup
 
 
-        \begingroup \linespread{1,75} \selectfont 
-            \textsc{\large <Lieu>, le \today}\\[0,25cm]
-       
-            {\large Haute école de Gestion de Genève (HEG-GE)}\\[0,25cm]
+        \begingroup \linespread{1,75} \selectfont
+        \textsc{\large <Lieu>, le \today}\\[0,25cm]
 
-            {\large Filière Informatique de gestion}\\[0,25cm]
+        {\large Haute école de Gestion de Genève (HEG-GE)}\\[0,25cm]
+
+        {\large Filière Informatique de gestion}\\[0,25cm]
         \endgroup
 
 
@@ -107,7 +110,7 @@
 
 
 
-            \vfill
+    \vfill
 \end{titlepage}
 
 
@@ -121,12 +124,17 @@
 
 % Content
 \section{Introduction}
-\subsection{Objectives}
-\subsection{Structure}
+
+% Citation avec Zotero et BibLaTeX
+\cite{ganiEcrirePourWeb2022}
+
 \section{Background}
 \section{Methodology}
 \section{Results}
 \section{Conclusion}
-\section{References}
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{bibliography}
 
 \end{document}

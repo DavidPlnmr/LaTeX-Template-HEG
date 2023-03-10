@@ -9,3 +9,7 @@ L'intérêt de ce template est de fournir un document LaTeX qui respecte les nor
 - LaTeX
 - TeXLive
 - ou tout autre distribution LaTeX
+
+## Bibliographie
+
+La bibliographie est générée par Zotero et le plugin Better BibTeX. Il est possible de générer un fichier `.bib` à partir de Zotero et de l'importer dans le document LaTeX.
